@@ -1,0 +1,50 @@
+---
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>SHH</title>
+		
+		<!-- Favicon -->
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+		<!-- ScrollReveal CDN  -->
+		<script src="https://unpkg.com/scrollreveal"></script>
+	</head>
+	<body class="scrollbar">
+        <div class="w-full h-full overflow-hidden">
+			<main>
+				<slot />
+		  	</main>
+		</div>
+	</body>
+</html>
+
+<script is:inline>
+	// Scroll to section
+    function scrollToSection(sectionId) {
+        var section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+    // End Scroll to section
+</script>
+
+<style is:global>
+	html {
+	  	background-color: #020221;
+		color: white;
+	  	scroll-behavior: smooth;
+	}
+	@media(prefers-reduce-motion: reduce){
+	  	html{
+			scroll-behavior: auto;
+	  	}
+	}
+</style>
