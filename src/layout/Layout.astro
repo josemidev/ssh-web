@@ -13,13 +13,16 @@ import "../styles/global.css";
 		<!-- Favicon -->
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
+        <!-- Font -->
+        <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
+
 		<!-- ScrollReveal CDN  -->
 		<script src="https://unpkg.com/scrollreveal"></script>
 	</head>
 	<body class="scrollbar">
         <div class="w-full h-full overflow-hidden">
 			<main>
-				<slot />
+				<slot />hola
 		  	</main>
 		</div>
 	</body>
@@ -37,9 +40,13 @@ import "../styles/global.css";
 </script>
 
 <style is:global>
+    *{
+        font-family: 'Helvetica Neue', sans-serif;
+    }
+
 	html {
-	  	background-color: #020221;
-		color: white;
+	  	background-color: white;
+		color: black;
 	  	scroll-behavior: smooth;
 	}
 	@media(prefers-reduce-motion: reduce){
