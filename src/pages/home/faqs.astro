@@ -1,3 +1,15 @@
-<section class="size-screen padding-auto">
+---
+import Faq from "@components/faq";
+---
 
+<section class="size-screen pt-[200px] pb-[100px]">
+    <div class="col gap-6 text-center mb-[60px]">
+        <h1 class="title">FAQs</h1>
+        <p class="paragraph">
+            If you need support, we have programs that can <br>
+            help - like our new Payment Assistance Bundle.
+        </p>
+    </div>
+
+    <Faq client:only="react" />
 </section>

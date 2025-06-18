@@ -52,7 +52,7 @@
 }
 
 .btn-secondary{
-    @apply w-[180px] flex flex-col items-center text-center rounded-xl gap-4 bg-white hover:bg-slate-100 hover:scale-105 text-black font-medium px-6 py-12 text-[20px] leading-[24px] cursor-pointer transition-all duration-300 [&>span]:my-auto
+    @apply w-[180px] flex flex-col items-center text-center rounded-xl gap-4 bg-white hover:bg-slate-100 hover:scale-105 text-black border border-gray-200 font-medium px-6 py-12 text-[20px] leading-[24px] cursor-pointer transition-all duration-300 [&>span]:my-auto
 }
 
 /* Others */
