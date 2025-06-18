@@ -1,6 +1,6 @@
 ---
 import ButtonPrimaty from "@/components/common/button_primaty.astro";
-import ButtonSecondary from "@/components/common/button_secondary.astro";
+import ButtonSquare from "@/components/common/button_square.astro";
 import IconMoney from "@/components/icons/icon_money.astro";
 import IconCoin from "@/components/icons/icon_coin.astro";
 import IconTruck from "@/components/icons/icon_truck.astro";
@@ -58,9 +58,9 @@ const data = [
 
     <div class="row gap-2.5 absolute-center-x -bottom-32">
         {data.map(({ text, icon: Icon }) => (
-            <ButtonSecondary text={text}>
+            <ButtonSquare text={text}>
                 <Icon slot="icon" class="size-[30px] stroke-black" />
-            </ButtonSecondary>
+            </ButtonSquare>
         ))}
     </div>
 </section>
