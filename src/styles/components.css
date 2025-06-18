@@ -1,6 +1,12 @@
 
 /* Text */
+.title{
+    @apply text-[44px] leading-[48px] font-medium
+}
 
+.paragraph{
+    @apply text-[18px] leading-[22px]
+}
 
 /* Flex box */
 .center-content{
@@ -41,6 +47,13 @@
 }
 
 /* Buttons */
+.btn-primary{
+    @apply bg-white hover:bg-slate-100 text-[#00148C] text-lg leading-[22px] px-6 py-[17px] rounded-xl w-fit cursor-pointer
+}
+
+.btn-secondary{
+    @apply w-[180px] flex flex-col items-center text-center rounded-xl gap-4 bg-white hover:bg-slate-100 hover:scale-105 text-black font-medium px-6 py-12 text-[20px] leading-[24px] cursor-pointer transition-all duration-300 [&>span]:my-auto
+}
 
 /* Others */
 .br-hidden{

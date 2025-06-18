@@ -1,0 +1,66 @@
+---
+import ButtonPrimaty from "@/components/common/button_primaty.astro";
+import ButtonSecondary from "@/components/common/button_secondary.astro";
+import IconMoney from "@/components/icons/icon_money.astro";
+import IconCoin from "@/components/icons/icon_coin.astro";
+import IconTruck from "@/components/icons/icon_truck.astro";
+import IconRay from "@/components/icons/icon_ray.astro";
+import IconQuestion from "@/components/icons/icon_question.astro";
+
+const data = [
+    {
+        text: "Ways to Pay",
+        icon: IconMoney
+    },
+    {
+        text: "Services & Rebates",
+        icon: IconCoin
+    },
+    {
+        text: "Moving?",
+        icon: IconTruck
+    },
+    {
+        text: "FAQS",
+        icon: IconRay
+    },
+    {
+        text: "Report Outage",
+        icon: IconQuestion
+    },
+    {
+        text: "Services & Rebates",
+        icon: IconMoney
+    },
+]
+---
+
+<section class="bg-[#00148C] text-white relative">
+    <div class="pt-[120px] pb-[320px] relative overflow-hidden">
+        <div class="size-screen col gap-6">
+            <h1 class="title">We're here for your <br> home this summer</h1>
+            <p class="paragraph">
+                If you need support, we have programs that can <br> 
+                help - like our new Payment Assistance Bundle.
+            </p>
+            <ButtonPrimaty text="Explore Options" />
+        </div>
+        
+        <div class="size-screen relative">
+            <img 
+                src="/images/wind_turbines.png" 
+                alt="Wind Turbines"
+                class="absolute-center-y right-0 rotate-[45deg] p-6 border-2 border-[#02AFF0]" 
+                loading="eager"
+            >
+        </div>
+    </div>
+
+    <div class="row gap-2.5 absolute-center-x -bottom-32">
+        {data.map(({ text, icon: Icon }) => (
+            <ButtonSecondary text={text}>
+                <Icon slot="icon" class="size-[30px] stroke-black" />
+            </ButtonSecondary>
+        ))}
+    </div>
+</section>

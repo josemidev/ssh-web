@@ -1,0 +1,15 @@
+---
+const { link, text, icon } = Astro.props;
+---
+
+<a
+    {...(link && { href: link })}
+    {...(link && { target: '_blank' })} 
+    class="btn-secondary"
+>
+    <slot name="icon" />
+
+    <span>
+        {text}
+    </span>
+</a>
