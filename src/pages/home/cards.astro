@@ -1,0 +1,45 @@
+---
+import IconArrowRotate from "@/components/icons/icon_arrow_rotate.astro";
+
+const data = [
+    {
+        title: "Title",
+        info: "Schedule an appointment and provide basic information about your home by calling 1-866-527-SAVE (7283) or scheduling online here.",
+        src: "/images/wind_turbines_card.png",
+        alt: "Wind Turbines"
+    },
+    {
+        title: "Title",
+        info: "Schedule an appointment and provide basic information about your home by calling 1-866-527-SAVE (7283) or scheduling online here.",
+        src: "/images/power_outlet.png",
+        alt: "Power Outlet"
+    },
+    {
+        title: "Title",
+        info: "Schedule an appointment and provide basic information about your home by calling 1-866-527-SAVE (7283) or scheduling online here.",
+        src: "/images/solar_panels.png",
+        alt: "Solar Panels"
+    },
+]
+---
+
+<section class="size-screen padding-auto grid grid-cols-1 lg:grid-cols-3 gap-[26px]">
+    {data.map(( item ) => (
+        <div class="col gap-[26px]">
+            <img src={item.src} alt={item.alt} />
+
+            <h2 class="text-[24px] leading-[28px] font-medium">
+                {item.title}
+            </h2>
+
+            <p class="text-lg text-[#5D5D5D]">
+                {item.info}
+            </p>
+
+            <a href="" target="_blank" class="text-[#00148C] text-lg font-medium hover:underline row gap-2">
+                <span>Start Now</span>
+                <IconArrowRotate class="size-6 fill-[#00148C]" />
+            </a>
+        </div>
+    ))}
+</section>
