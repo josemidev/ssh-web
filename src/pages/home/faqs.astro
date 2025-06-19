@@ -4,12 +4,14 @@ import Faq from "@components/faq";
 
 <section class="size-screen pt-[350px] lg:pt-[200px] pb-[50px] lg:pb-[100px]">
     <div class="col gap-6 text-center mb-[60px]">
-        <h1 class="title">FAQs</h1>
-        <p class="paragraph">
+        <h1 class="title into-center">FAQs</h1>
+        <p class="paragraph into-center">
             If you need support, we have programs that can <br class="br-hidden">
             help - like our new Payment Assistance Bundle.
         </p>
     </div>
 
-    <Faq client:only="react" />
+    <div class="into-right">
+        <Faq client:only="react" />
+    </div>
 </section>

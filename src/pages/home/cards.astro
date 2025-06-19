@@ -6,26 +6,29 @@ const data = [
         title: "Title",
         info: "Schedule an appointment and provide basic information about your home by calling 1-866-527-SAVE (7283) or scheduling online here.",
         src: "/images/wind_turbines_card.png",
-        alt: "Wind Turbines"
+        alt: "Wind Turbines",
+        into: "into-right"
     },
     {
         title: "Title",
         info: "Schedule an appointment and provide basic information about your home by calling 1-866-527-SAVE (7283) or scheduling online here.",
         src: "/images/power_outlet.png",
-        alt: "Power Outlet"
+        alt: "Power Outlet",
+        into: "into-center"
     },
     {
         title: "Title",
         info: "Schedule an appointment and provide basic information about your home by calling 1-866-527-SAVE (7283) or scheduling online here.",
         src: "/images/solar_panels.png",
-        alt: "Solar Panels"
+        alt: "Solar Panels",
+        into: "into-left"
     },
 ]
 ---
 
 <section class="size-screen padding-auto grid grid-cols-1 lg:grid-cols-3 gap-[26px]">
     {data.map(( item ) => (
-        <div class="col gap-[26px]">
+        <div class={`col gap-[26px] ${item.into}`}>
             <img src={item.src} alt={item.alt} />
 
             <h2 class="text-[24px] leading-[28px] font-medium">
