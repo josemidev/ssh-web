@@ -1,10 +1,11 @@
 ---
-const { link, text } = Astro.props;
+const { link, onclick, text } = Astro.props;
 ---
 
 <a
     {...(link && { href: link })}
     {...(link && { target: '_blank' })} 
+    {...(!link && onclick && { onclick })}
     class="btn-square"
 >
     <slot name="icon" />

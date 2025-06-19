@@ -1,0 +1,36 @@
+---
+import IconXMark from "./icons/icon_x_mark.astro";
+import IconInfo from "./icons/icon_info.astro";
+import ButtonSecondary from "./common/button_secondary.astro";
+---
+
+<div 
+  id="modal" 
+  class="fixed top-0 left-0 z-[100] flex items-center justify-center w-screen h-screen backdrop-blur-3xl bg-black/50 transition-opacity duration-300 opacity-0 pointer-events-none scale-95"
+>
+  <div class="bg-white col gap-8 rounded-xl px-9 py-4 max-w-[570px] w-full transition-transform duration-300 scale-95">
+    <button 
+        onclick="closeModal()" 
+        class="ml-auto -mr-4 p-2 cursor-pointer"
+    >
+        <IconXMark class="size-8 fill-black" />
+    </button>
+
+    <h1 class="title text-center">
+        We're here for your home 
+        this summer 
+    </h1>
+
+    <p class="text-center text-lg">
+        If you need support, we have programs that can help - like our new
+        Payment Assistance Bundle.
+    </p>
+
+    <div class="bg-[#00148C]/10 text-[#00148C] row gap-2.5 p-4 rounded-xl">
+        <IconInfo class="fill-[#00148C] min-w-5 min-h-5 size-5" />
+        If you need support, we have programs that can help - like our new Payment Assistance Bundle.
+    </div>
+
+    <ButtonSecondary text="This is a Button" className="mx-auto mb-6" />
+  </div>
+</div>

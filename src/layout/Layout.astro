@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import Nav from "@/components/nav.astro";
 import Footer from "@/components/footer.astro";
+import Modal from "@/components/modal.astro";
 ---
 
 <!doctype html>
@@ -10,7 +11,7 @@ import Footer from "@/components/footer.astro";
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>SHH</title>
+		<title>National Grid</title>
 		
 		<!-- Favicon -->
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -21,7 +22,7 @@ import Footer from "@/components/footer.astro";
 		<!-- ScrollReveal CDN  -->
 		<script src="https://unpkg.com/scrollreveal"></script>
 	</head>
-	<body class="scrollbar">
+	<body id="body" class="scrollbar">
         <div class="w-full h-full overflow-hidden">
 			<Nav />
 			
@@ -30,6 +31,8 @@ import Footer from "@/components/footer.astro";
 		  	</main>
 
 			<Footer />
+
+			<Modal />
 		</div>
 	</body>
 </html>
@@ -43,6 +46,23 @@ import Footer from "@/components/footer.astro";
         }
     }
     // End Scroll to section
+
+	// Modal
+	const modal = document.getElementById('modal');
+	const body = document.getElementById('body');
+
+	function showModal() {
+		modal.classList.remove('opacity-0', 'pointer-events-none', 'scale-95');
+		modal.classList.add('opacity-100', 'pointer-events-auto', 'scale-100');
+		body.classList.add('overflow-hidden');
+	}
+
+	function closeModal() {
+		modal.classList.remove('opacity-100', 'pointer-events-auto', 'scale-100');
+		modal.classList.add('opacity-0', 'pointer-events-none', 'scale-95');
+		body.classList.remove('overflow-hidden');
+	}
+	// End Modal
 </script>
 
 <style is:global>
