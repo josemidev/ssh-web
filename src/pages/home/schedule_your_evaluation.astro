@@ -1,20 +1,26 @@
 ---
 import ButtonSecondary from "@/components/common/button_secondary.astro";
+import IconArrowRotate from "@/components/icons/icon_arrow_rotate.astro";
 ---
 
-<section class="bg-[url('/images/wind_turbines_hero.jpg')] padding-auto bg-cover bg-center bg-no-repeat">
-    <div class="size-screen bg-white rounded-2xl py-[70px] col gap-11 items-center text-center">
+<section class="bg-[url('/images/wind_turbines_hero.jpg')] padding-auto px-5 lg:px-0 bg-cover bg-center bg-no-repeat">
+    <div class="size-screen bg-white px-6 rounded-2xl py-[84px] lg:py-[70px] col gap-11 items-center text-center mb-10 lg:mb-0">
         <h1 class="title">
-            Schedule your no-cost <br> 
+            Schedule your no-cost <br class="br-hidden"> 
             assessment today
         </h1>
 
-        <p class="text-xl text-[#5D5D5D]">
-            By taking advantage of a Home Energy Assessment, you’re not only improving <br>
-            your home’s energy performance and saving money, you’re getting the experience <br>
+        <p class="lg:text-xl text-[#5D5D5D]">
+            By taking advantage of a Home Energy Assessment, you’re not only improving <br class="br-hidden">
+            your home’s energy performance and saving money, you’re getting the experience <br class="br-hidden">
             of making hands-on improvements while learning about your home.
         </p>
 
-        <ButtonSecondary text="Contact" />
+        <ButtonSecondary text="Contact" className="hidden lg:block" />
+        
+        <a class="row gap-[74px] items-center px-6 py-5 border border-gray-300 rounded-full mt-12 lg:hidden">
+            <span class="text-xl font-medium">Schedule Now</span>
+            <IconArrowRotate class="size-6 fill-black" />
+        </a>
     </div>
 </section>
