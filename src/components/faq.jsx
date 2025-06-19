@@ -27,7 +27,7 @@ export default function Faq() {
   };
 
   return (
-    <div className="mx-auto w-[700px]">
+    <div className="lg:mx-auto lg:w-[700px]">
       {data.map(({ id, title, info }) => (
         <div
           key={id}
@@ -35,9 +35,9 @@ export default function Faq() {
           className="border-t border-[#D9D9D9] py-5 cursor-pointer"
         >
           <div className="row items-center justify-between">
-            <h2 className="">{title}</h2>
+            <h2>{title}</h2>
             <IconChevron
-              className={`size-5 fill-black transition-transform duration-300 ${
+              className={`size-6 lg:size-5 fill-black transition-transform duration-300 ${
                 current === id ? "rotate-0" : "rotate-180"
               }`}
             />
