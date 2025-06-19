@@ -5,7 +5,7 @@ const { link, text, className } = Astro.props;
 <a
     {...(link && { href: link })}
     {...(link && { target: '_blank' })} 
-    class={`btn-primary ${className}`}
+    class={`btn-secondary ${className}`}
 >
     <slot name="icon" />
 
