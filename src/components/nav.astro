@@ -1,0 +1,29 @@
+---
+import ButtonSecondary from "./common/button_secondary.astro";
+import IconNationalGrid from "./icons/icon_national_grid.astro";
+---
+
+<nav id="nav" class="fixed bg-white py-4 z-50 w-full">
+    <div class="flex justify-between items-center lg:max-w-7xl lg:mx-auto px-5 lg:px-0">
+        <IconNationalGrid />
+
+        <ButtonSecondary text="Contact" className="[&>span]:!leading-[0px]" />
+    </div>
+</nav>
+
+<style>
+
+#nav{
+   animation: shadow linear both; 
+   animation-timeline: scroll();
+   animation-range: 0 500px;
+}
+
+@keyframes shadow {
+    to {
+        box-shadow: 
+        0 10px 15px -3px rgb(0 0 0 / 0.1), 
+        0 4px 6px -4px rgb(0 0 0 / 0.1);
+    }
+}
+</style>
