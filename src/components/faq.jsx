@@ -4,18 +4,30 @@ import IconChevron from "./icons/icon_chevron";
 const data = [
     { 
         id: 1, 
-        title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", 
-        info: "Astro es un framework web..." 
+        title: "What information do I need to have to Start Service?", 
+        info: `
+              Here is a list of things you will need to have to start service
+              Full Address you are moving to (including the house number, street name and Suffix, unit/apartment number, city, state, and zip code)
+              Legal Name as shown on SSN Card
+              Social Security Number
+              Preferred Contact Number
+              Email Address
+              Date you would like to start service
+              Driver’s License (You may be asked to provide information from your Driver’s License)
+              
+
+              Please have this information readily available prior to your request for Service
+        `
     },
     { 
         id: 2, 
-        title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", 
-        info: "Astro es un framework web..." 
+        title: "How do I switch to my gas or electric account?", 
+        info: "Massachusetts customers no longer need two separate logins for their gas and electric service accounts. 1-210-892-3660 Monday - Friday, 7:00 am - 7:00 pm" 
     },
     { 
         id: 3, 
-        title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", 
-        info: "Astro es un framework web..." 
+        title: "Where can I find information on rebates?  ", 
+        info: "call our Customer Service Contact Center at: 1-210-892-3660 Monday - Friday, 7:00 am - 7:00 pm" 
     },
 ];
 
