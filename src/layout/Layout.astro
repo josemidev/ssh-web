@@ -48,10 +48,15 @@ import Modal from "@/components/modal.astro";
     // End Scroll to section
 
 	// Modal
-	const modal = document.getElementById('modal');
-	const body = document.getElementById('body');
+	function showModal(title = '', description = '') {
+		const modal = document.getElementById('modal');
+		const body = document.getElementById('body');
+		const modalTitle = document.getElementById('modal-title');
+		const modalDescription = document.getElementById('modal-description');
 
-	function showModal() {
+		modalTitle.textContent = title;
+		modalDescription.textContent = description;
+
 		modal.classList.remove('opacity-0', 'pointer-events-none', 'scale-95');
 		modal.classList.add('opacity-100', 'pointer-events-auto', 'scale-100');
 		body.classList.add('overflow-hidden');

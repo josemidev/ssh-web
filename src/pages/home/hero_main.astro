@@ -10,21 +10,28 @@ import IconQuestion from "@/components/icons/icon_question.astro";
 const data = [
     {
         text: "Ways to Pay",
-        icon: IconMoney
+        icon: IconMoney,
+        description: "Pay your bill online, by phone, or by mail. We also offer budget billing and auto-pay options."
     },
     {
         text: "Services & Rebates",
-        icon: IconCoin
+        icon: IconCoin,
+        description: "Pay your bill online, by phone, or by mail. We also offer budget billing and auto-pay options."
     },
     {
         text: "Moving?",
-        icon: IconTruck
+        icon: IconTruck,
+        description: "Pay your bill online, by phone, or by mail. We also offer budget billing and auto-pay options."
     },
     {
         text: "Report Outage",
-        icon: IconQuestion
+        icon: IconQuestion,
+        description: "Pay your bill online, by phone, or by mail. We also offer budget billing and auto-pay options."
     },
 ]
+
+const nameButton = "Explore Options";
+const descriptionButton = "If you need support, we have programs that can help - like our new Payment Assistance Bundle.";
 ---
 
 <section class="bg-[#00148C] text-white relative">
@@ -38,9 +45,9 @@ const data = [
                 If you need support, we have programs that can <br class="br-hidden"> 
                 help - like our new Payment Assistance Bundle.
             </p>
-            <ButtonPrimaty 
-                onclick="showModal()" 
-                text="Explore Options" 
+            <ButtonPrimaty
+                onclick={`showModal('${nameButton}', '${descriptionButton}')`}
+                text={nameButton} 
                 className="mx-auto lg:mx-0 into-bottom-3" 
             />
         </div>
@@ -56,8 +63,8 @@ const data = [
     </div>
 
     <div class="w-full px-5 lg:px-0 lg:w-auto grid grid-cols-2 lg:flex flex-row gap-2.5 absolute-center-x -bottom-[200px] lg:-bottom-32 into-left">
-        {data.map(({ text, icon: Icon }) => (
-            <ButtonSquare text={text} className="">
+        {data.map(({ text, icon: Icon, description }) => (
+            <ButtonSquare onclick={`showModal('${text}', '${description}')`} text={text} className="">
                 <Icon slot="icon" class="size-[30px] stroke-black" />
             </ButtonSquare>
         ))}

@@ -39,7 +39,7 @@ const data = [
                 {item.info}
             </p>
 
-            <a href="" target="_blank" class="text-[#00148C] text-lg font-medium hover:underline row gap-2">
+            <a onclick={`showModal('${item.title}', '${item.info}')`} class="text-[#00148C] text-lg font-medium hover:underline row gap-2">
                 <span>Start Now</span>
                 <IconArrowRotate class="size-6 fill-[#00148C]" />
             </a>
