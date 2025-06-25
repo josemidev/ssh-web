@@ -16,6 +16,8 @@
     "astro": "^5.9.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "tailwindcss": "^4.1.10"
+    "tailwindcss": "^4.1.10",
+    "@astrojs/vercel": "^8.1.2",
+    "sharp": "^0.33.5"
   }
 }
