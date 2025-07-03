@@ -1,32 +1,31 @@
 ---
 import ButtonPrimaty from "@/components/common/button_primaty.astro";
 import ButtonSquare from "@/components/common/button_square.astro";
-import IconMoney from "@/components/icons/icon_money.astro";
 import IconCoin from "@/components/icons/icon_coin.astro";
-import IconTruck from "@/components/icons/icon_truck.astro";
-import IconRay from "@/components/icons/icon_ray.astro";
+import IconMoney from "@/components/icons/icon_money.astro";
 import IconQuestion from "@/components/icons/icon_question.astro";
+import IconTruck from "@/components/icons/icon_truck.astro";
 
 const data = [
     {
-        text: "Ways to Pay",
+        text: "Pay bill",
         icon: IconMoney,
         description: "Pay your bill online, by phone, or by mail. We also offer budget billing and auto-pay options."
     },
     {
         text: "Services & Rebates",
         icon: IconCoin,
-        description: "Pay your bill online, by phone, or by mail. We also offer budget billing and auto-pay options."
+        description: "Services and rebates to help you save on your energy bill. From energy efficiency programs to renewable energy options, we have solutions for every customer."
     },
     {
         text: "Moving?",
         icon: IconTruck,
-        description: "Pay your bill online, by phone, or by mail. We also offer budget billing and auto-pay options."
+        description: "Moving? We can help you transfer your service to your new address. Just give us a call or visit our website to get started."
     },
     {
         text: "Report Outage",
         icon: IconQuestion,
-        description: "Pay your bill online, by phone, or by mail. We also offer budget billing and auto-pay options."
+        description: "Report an outage or check the status of an existing outage. Our team is available 24/7 to assist you with any issues you may have."
     },
 ]
 
@@ -38,12 +37,11 @@ const descriptionButton = "If you need support, we have programs that can help -
     <div class="px-5 lg:px-0 pt-[120px] pb-[280px] lg:pb-[220px] relative overflow-hidden">
         <div class="size-screen col gap-6 text-center lg:text-start z-10 relative">
             <h1 class="title into-bottom">
-                We're here for your <br> 
-                home this summer
+                Electric Supply Prices are<br> 
+                Increasing
             </h1>
             <p class="paragraph into-bottom-2">
-                If you need support, we have programs that can <br class="br-hidden"> 
-                help - like our new Payment Assistance Bundle.
+                Learn what this means for you and how you can manage energy costs <br class="br-hidden"> 
             </p>
             <ButtonPrimaty
                 onclick={`showModal('${nameButton}', '${descriptionButton}')`}
