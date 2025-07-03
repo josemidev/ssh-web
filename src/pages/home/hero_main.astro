@@ -1,17 +1,16 @@
 ---
 import ButtonPrimaty from "@/components/common/button_primaty.astro";
 import ButtonSquare from "@/components/common/button_square.astro";
-import IconMoney from "@/components/icons/icon_money.astro";
 import IconCoin from "@/components/icons/icon_coin.astro";
-import IconTruck from "@/components/icons/icon_truck.astro";
-import IconRay from "@/components/icons/icon_ray.astro";
+import IconMoney from "@/components/icons/icon_money.astro";
 import IconQuestion from "@/components/icons/icon_question.astro";
+import IconTruck from "@/components/icons/icon_truck.astro";
 
 const data = [
     {
-        text: "Ways to Pay",
+        text: "Pay my Bill",
         icon: IconMoney,
-        description: "Pay your bill online, by phone, or by mail. We also offer budget billing and auto-pay options."
+        description: "ComEd makes paying your bill easy secure online payments, by phone, or by mail. We also offer budget billing and auto-pay options."
     },
     {
         text: "Services & Rebates",
@@ -21,12 +20,12 @@ const data = [
     {
         text: "Moving?",
         icon: IconTruck,
-        description: "Pay your bill online, by phone, or by mail. We also offer budget billing and auto-pay options."
+        description: "Moving can be stressful but it doesnt have to be. move, or stop your ComEd service online."
     },
     {
-        text: "Report Outage",
+        text: "Outage",
         icon: IconQuestion,
-        description: "Pay your bill online, by phone, or by mail. We also offer budget billing and auto-pay options."
+        description: "If an outage occus, ComEd is committed to respomgimg as quickly as possible you informed along the way. You can report an outage online, by phone, or through our mobile app."
     },
 ]
 
@@ -34,16 +33,18 @@ const nameButton = "Explore Options";
 const descriptionButton = "If you need support, we have programs that can help - like our new Payment Assistance Bundle.";
 ---
 
-<section class="bg-[#00148C] text-white relative">
+<section class="bg-[#180D67] text-white relative">
     <div class="px-5 lg:px-0 pt-[120px] pb-[280px] lg:pb-[220px] relative overflow-hidden">
         <div class="size-screen col gap-6 text-center lg:text-start z-10 relative">
             <h1 class="title into-bottom">
-                We're here for your <br> 
-                home this summer
+                Welcome to  <br> 
+                ComEd
             </h1>
             <p class="paragraph into-bottom-2">
-                If you need support, we have programs that can <br class="br-hidden"> 
-                help - like our new Payment Assistance Bundle.
+                We’re committed to powering a cleaner, brighter future <br class="br-hidden"> 
+                for our customers and communities. We’ve made some updates <br class="br-hidden"> 
+                to our website but the same information is still available, <br class="br-hidden"> 
+                making it easier to find what you need.
             </p>
             <ButtonPrimaty
                 onclick={`showModal('${nameButton}', '${descriptionButton}')`}
@@ -54,9 +55,9 @@ const descriptionButton = "If you need support, we have programs that can help -
         
         <div class="size-screen lg:relative">
             <img 
-                src="/images/wind_turbines.png" 
+                src="/images/wind_turbines_hero.png" 
                 alt="Wind Turbines"
-                class="absolute -bottom-28 lg:top-1/2 lg:-translate-y-1/2 right-0 rotate-[45deg] p-6 border-2 border-[#02AFF0] into-right-2" 
+                class="absolute -bottom-28 lg:top-1/2 lg:-translate-y-1/2 left-6/12 p-6 border-2 into-right-2" 
                 loading="eager"
             >
         </div>

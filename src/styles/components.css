@@ -48,11 +48,11 @@
 
 /* Buttons */
 .btn-primary{
-    @apply bg-white hover:bg-slate-100 text-[#00148C] text-lg leading-[22px] px-6 py-[17px] rounded-xl w-fit cursor-pointer
+    @apply bg-white hover:bg-slate-100 text-[#180D67] text-lg leading-[22px] px-6 py-[17px] rounded-xl w-fit cursor-pointer
 }
 
 .btn-secondary{
-    @apply bg-[#00148C] hover:bg-[#00148C]/90 text-white text-lg leading-[22px] px-6 py-[17px] rounded-xl w-fit cursor-pointer
+    @apply bg-[#180D67] hover:bg-[#180D67]/90 text-white text-lg leading-[22px] px-6 py-[17px] rounded-xl w-fit cursor-pointer
 }
 
 .btn-square{
