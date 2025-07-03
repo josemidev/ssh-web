@@ -2,3 +2,7 @@
 
 @import "./components.css";
 @import "./scrollbar.css";
+
+@theme {
+    --color-main: #00148C;
+}
