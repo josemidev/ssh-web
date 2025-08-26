@@ -5,23 +5,50 @@ import IconArrowRotate from "./icons/icon_arrow_rotate.astro";
 <footer class="bg-main text-white w-full pt-[60px] lg:pt-[128px] pb-5">
     <div class="size-screen flex flex-col lg:flex-row lg:justify-between mb-[70px] lg:mb-[120px]">
         <div class="col gap-3 lg:gap-[26px] mb-11 lg:mb-0">
-            <div />
+            <img src="/images/ppl.webp" width="140px" alt="Logo PPL">
 
+            <span>
+                Lorem ipsum dolor sit amet, <br>
+                consectetur adipiscing elit. 
+            </span>
+
+            <button class="w-fit py-4 px-6 rounded-xl bg-[#069D5F] hover:bg-[#058b54] text-white row gap-2 items-center cursor-pointer">
+                Start Now
+
+                <IconArrowRotate class="size-6 fill-white" />    
+            </button>
         </div>
 
-        <div class="flex flex-col lg:flex-row gap-[36px] lg:gap-10">
+        <div class="flex flex-col lg:flex-row gap-[36px] lg:gap-[74px]">
             <div class="col gap-3 lg:gap-4">
-                <h3>Contact</h3>
-                <a href="tel:+12108923660" class="row gap-2.5 hover:underline cursor-pointer">
-                    <span>1-210-892-3660</span>
-                    <IconArrowRotate class="size-6 fill-white" />
-                </a>
+                <h3 class="font-semibold">Contact</h3>
+
+                <div class="col gap-3.5">
+                    <a href="tel:+12108923660" class="row gap-2.5 underline cursor-pointer">
+                        <span>1-210-892-3660</span>
+                        <IconArrowRotate class="size-6 fill-white" />
+                    </a>
+
+                    <a href="mailto:email@company.name" class="row gap-2.5 underline cursor-pointer">
+                        <span>email@company.name</span>
+                        <IconArrowRotate class="size-6 fill-white" />
+                    </a>
+                </div>
             </div>
 
+            <div class="col gap-3 lg:gap-4">
+                <h3 class="font-semibold">Legal Information</h3>
+                
+                <div class="col gap-3.5">
+                    <a href="" target="_blank" class="hover:underline">Privacy Policy</a>
+                    <a href="" target="_blank" class="hover:underline">Terms & Conditions</a>
+                    <a href="" target="_blank" class="hover:underline">Cookies Policy</a>
+                </div>
+            </div>
         </div>
     </div>
 
     <p class="lg:text-center px-5 lg:px-0">
-        Copyright @ 2025. All rights reserved.
+        Copyright @ 2025 Company Name. All rights reserved.
     </p>
 </footer>
