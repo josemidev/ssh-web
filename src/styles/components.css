@@ -1,7 +1,7 @@
 
 /* Text */
 .title{
-    @apply text-[44px] leading-[50px] font-medium
+    @apply text-[44px] leading-[50px] font-semibold
 }
 
 .paragraph{

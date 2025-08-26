@@ -2,7 +2,6 @@
 import "../styles/global.css";
 import Nav from "@/components/nav.astro";
 import Footer from "@/components/footer.astro";
-import Modal from "@/components/modal.astro";
 ---
 
 <!doctype html>
@@ -17,7 +16,7 @@ import Modal from "@/components/modal.astro";
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
         <!-- Font -->
-        <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/helvatica-neue-lt@1.0.1/index.min.css" rel="stylesheet">
 
 		<!-- ScrollReveal CDN  -->
 		<script src="https://unpkg.com/scrollreveal"></script>
@@ -39,8 +38,6 @@ import Modal from "@/components/modal.astro";
 		  	</main>
 
 			<Footer />
-
-			<Modal />
 		</div>
 	</body>
 	
@@ -58,28 +55,6 @@ import Modal from "@/components/modal.astro";
         }
     }
     // End Scroll to section
-
-	// Modal
-	function showModal(title = '', description = '') {
-		const modal = document.getElementById('modal');
-		const body = document.getElementById('body');
-		const modalTitle = document.getElementById('modal-title');
-		const modalDescription = document.getElementById('modal-description');
-
-		modalTitle.textContent = title;
-		modalDescription.textContent = description;
-
-		modal.classList.remove('opacity-0', 'pointer-events-none', 'scale-95');
-		modal.classList.add('opacity-100', 'pointer-events-auto', 'scale-100');
-		body.classList.add('overflow-hidden');
-	}
-
-	function closeModal() {
-		modal.classList.remove('opacity-100', 'pointer-events-auto', 'scale-100');
-		modal.classList.add('opacity-0', 'pointer-events-none', 'scale-95');
-		body.classList.remove('overflow-hidden');
-	}
-	// End Modal
 </script>
 
 <style is:global>
