@@ -1,37 +1,35 @@
 import { useState } from "react";
-import IconChevron from "./icons/icon_chevron";
+import IconCheck from "@/components/icons/icon_check";
 
-const data = [
-    { 
-        id: 1, 
-        title: "What information do I need to have to Start Service?", 
-        info: `
-              Here is a list of things you will need to have to start service
-              Full Address you are moving to (including the house number, street name and Suffix, unit/apartment number, city, state, and zip code)
-              Legal Name as shown on SSN Card
-              Social Security Number
-              Preferred Contact Number
-              Email Address
-              Date you would like to start service
-              Driver’s License (You may be asked to provide information from your Driver’s License)
-              
+const typeOne = [
+  {
+    id: 0,
+    title: 'Service reconnections to get you back online faster.',
+    info: 'Massachusetts customers no longer need two separate logins for their gas and electric service accounts. 1-210-892-3660 Monday - Friday, 7:00 am - 7:00 pm'
+  },
+  {
+    id: 1,
+    title: 'Updating your billing information so your account stays accurate and up to date.',
+    info: 'Massachusetts customers no longer need two separate logins for their gas and electric service accounts. 1-210-892-3660 Monday - Friday, 7:00 am - 7:00 pm'
+  }
+]
 
-              Please have this information readily available prior to your request for Service
-        `
-    },
-    { 
-        id: 2, 
-        title: "How do I switch to my gas or electric account?", 
-        info: "Massachusetts customers no longer need two separate logins for their gas and electric service accounts. 1-210-892-3660 Monday - Friday, 7:00 am - 7:00 pm" 
-    },
-    { 
-        id: 3, 
-        title: "Where can I find information on rebates?  ", 
-        info: "call our Customer Service Contact Center at: 1-210-892-3660 Monday - Friday, 7:00 am - 7:00 pm" 
-    },
-];
+const typeTwo = [
+  {
+    id: 0,
+    title: 'Easy-to-use tools that put all your options in one place',
+    info: 'Massachusetts customers no longer need two separate logins for their gas and electric service accounts. 1-210-892-3660 Monday - Friday, 7:00 am - 7:00 pm'
+  },
+  {
+    id: 1,
+    title: 'A seamless path to real savings and smarter energy choices',
+    info: 'Massachusetts customers no longer need two separate logins for their gas and electric service accounts. 1-210-892-3660 Monday - Friday, 7:00 am - 7:00 pm'
+  }
+]
 
-export default function Faq() {
+export default function Faq({ type }) {
+  const data = type === 1 ? typeOne : typeTwo;
+
   const [current, setCurrent] = useState(null);
 
   const toggle = (id) => {
@@ -44,15 +42,16 @@ export default function Faq() {
         <div
           key={id}
           onClick={() => toggle(id)}
-          className="border-t border-[#D9D9D9] py-5 cursor-pointer"
+          className="border-t border-[#D9D9D9] py-4 cursor-pointer"
         >
-          <div className="row items-center justify-between">
-            <h2>{title}</h2>
-            <IconChevron
-              className={`size-6 lg:size-5 fill-black transition-transform duration-300 ${
-                current === id ? "rotate-0" : "rotate-180"
-              }`}
-            />
+          <div className="row gap-3 lg:gap-0 lg:items-center">
+            {type === 2 && (
+              <IconCheck className='size-3.5 fill-[#61C454] mt-1 lg:mt-0' />
+            )}
+
+            <h2 className="mx-auto">
+              {title}
+            </h2>
           </div>
 
           <div

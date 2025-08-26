@@ -1,11 +1,11 @@
 
 /* Text */
 .title{
-    @apply text-[44px] leading-[48px] font-medium
+    @apply text-[44px] leading-[50px] font-medium
 }
 
 .paragraph{
-    @apply text-[18px] leading-[22px]
+    @apply text-[18px] leading-[26px]
 }
 
 /* Flex box */
