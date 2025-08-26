@@ -1,0 +1,27 @@
+---
+import IconArrowRotate from "./icons/icon_arrow_rotate.astro";
+
+const { 
+    id, 
+    link, 
+    target = false,
+    onclick, 
+    text,
+    className,
+    icon = false
+} = Astro.props;
+---
+
+<a
+    {...link ? { href: link } : {}}
+    {...id ? { id: id } : {}}
+    {...target === true ? { target: '_blank' } : {}}
+    {...onclick ? { onclick: onclick } : {}}
+    class={`button-main ${className}`}
+>
+    {text}
+
+    {icon && (
+        <IconArrowRotate class="size-6 fill-white" />    
+    )}
+</a>

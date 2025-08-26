@@ -1,8 +1,21 @@
+---
+import Button from "./button.astro";
+---
+
 <nav id="nav" class="fixed bg-white py-4 z-50 w-full">
     <div class="flex justify-between items-center lg:max-w-7xl lg:mx-auto px-5 lg:px-0">
-        <div />
+        <button onclick="scrollToSection('hero')" class="outline-none cursor-pointer">
+            <img 
+                src="/images/smart_rate.webp" 
+                alt="Logo Smart Rate"
+                loading="eager"
+            >
+        </button>
 
-        
+        <Button 
+            text="Contact"
+            className="!py-3"
+        >
     </div>
 </nav>
 

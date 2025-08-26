@@ -8,6 +8,11 @@
     @apply text-[18px] leading-[26px]
 }
 
+/* Buttons */
+.button-main{
+    @apply w-fit py-3.5 px-6 rounded-xl bg-[#069D5F] hover:bg-[#058b54] text-white flex gap-2 items-center cursor-pointer
+}
+
 /* Flex box */
 .center-content{
     @apply flex justify-center items-center
