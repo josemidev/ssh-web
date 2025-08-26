@@ -8,9 +8,34 @@
     @apply text-[18px] leading-[26px]
 }
 
+.err{
+    @apply text-xs font-light text-red-400
+}
+
+label{
+    @apply lg:mb-1 text-sm
+}
+
+.text-radio{
+    @apply text-sm text-[#828282]
+}
+
 /* Buttons */
 .button-main{
     @apply w-fit py-3.5 px-6 rounded-xl bg-[#069D5F] hover:bg-[#058b54] text-white flex gap-2 items-center cursor-pointer
+}
+
+/* Inputs */
+.input-main{
+    @apply w-full border border-[#D6D6D6] rounded-xl px-3 py-2 text-sm placeholder:text-sm placeholder:text-[#C7C7C7] outline-blue-400
+}
+
+select{
+    @apply w-full appearance-none cursor-pointer
+}
+
+input[type=radio]{
+    @apply !bg-red-300
 }
 
 /* Flex box */
