@@ -1,5 +1,5 @@
+import { ErrorMessage, Field, Form, Formik } from "formik";
 import { useState } from "react";
-import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
 const validation = Yup.object().shape({
@@ -111,8 +111,8 @@ export default function QuoteForm() {
                                     className="input-main"
                                 >   
                                     <option value="">Select</option>
-                                    <option value="green">Green</option>
-                                    <option value="blue">Blue</option>
+                                    <option value="English">English</option>
+                                    <option value="spanish">spanish</option>
                                 </Field>
                                 <ErrorMessage name="language" component="span" className="err" />
                             </div>
@@ -172,8 +172,8 @@ export default function QuoteForm() {
                                 className="input-main"
                             >
                                 <option value="">Select</option>
-                                <option value="green">Green</option>
-                                <option value="blue">Blue</option>
+                                <option value="I own a house">I own a house</option>
+                                <option value="I live in a rented property">I live in a rented property</option>
                             </Field>
                             <ErrorMessage name="property" component="span" className="err" />
                         </div>
@@ -204,28 +204,22 @@ export default function QuoteForm() {
                             <div className="col">
                                 <label>Phone</label>
                                 <Field
-                                    as="select"
                                     name="phone"
+                                    type="text"
                                     className="input-main"
-                                >   
-                                    <option value="">Select</option>
-                                    <option value="green">Green</option>
-                                    <option value="blue">Blue</option>
-                                </Field>
+                                    placeholder="Type Here"
+                                />
                                 <ErrorMessage name="phone" component="span" className="err" />
                             </div>
 
                             <div className="col">
                                 <label>Alt Phone</label>
-                                <Field
-                                    as="select"
-                                    name="altPhone"
+                               <Field
+                                    name="altphone"
+                                    type="text"
                                     className="input-main"
-                                >   
-                                    <option value="">Select</option>
-                                    <option value="green">Green</option>
-                                    <option value="blue">Blue</option>
-                                </Field>
+                                    placeholder="Type Here"
+                                />
                                 <ErrorMessage name="altPhone" component="span" className="err" />
                             </div>
 
@@ -242,43 +236,34 @@ export default function QuoteForm() {
 
                             <div className="col">
                                 <label>City</label>
-                                <Field
-                                    as="select"
+                               <Field
                                     name="city"
+                                    type="text"
                                     className="input-main"
-                                >   
-                                    <option value="">Select</option>
-                                    <option value="green">Green</option>
-                                    <option value="blue">Blue</option>
-                                </Field>
+                                    placeholder="Type Here"
+                                />
                                 <ErrorMessage name="city" component="span" className="err" />
                             </div>
 
                             <div className="col">
                                 <label>State</label>
                                 <Field
-                                    as="select"
                                     name="state"
+                                    type="text"
                                     className="input-main"
-                                >   
-                                    <option value="">Select</option>
-                                    <option value="green">Green</option>
-                                    <option value="blue">Blue</option>
-                                </Field>
+                                    placeholder="Type Here"
+                                />
                                 <ErrorMessage name="state" component="span" className="err" />
                             </div>
 
                             <div className="col">
                                 <label>Country</label>
-                                <Field
-                                    as="select"
+                               <Field
                                     name="country"
+                                    type="text"
                                     className="input-main"
-                                >   
-                                    <option value="">Select</option>
-                                    <option value="green">Green</option>
-                                    <option value="blue">Blue</option>
-                                </Field>
+                                    placeholder="Type Here"
+                                />
                                 <ErrorMessage name="country" component="span" className="err" />
                             </div>
                         </div>
@@ -298,7 +283,7 @@ export default function QuoteForm() {
 
                     {formSuccess && (
                         <div className="text-center text-green-600 bg-green-100 text-sm font-medium py-2">
-                            ¡Tu solicitud fue enviada con éxito!
+                            Your request was sent successfully!
                         </div>
                     )}
 
