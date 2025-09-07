@@ -12,7 +12,7 @@ const validation = Yup.object().shape({
         .email("Enter a valid email address")
         .required("Email is required"),
     phone: Yup.string().required("Phone is required"),
-    altPhone: Yup.string().required("Alt phone is required"),
+    altPhone: Yup.string(),
     address: Yup.string().required("Address is required"),
     city: Yup.string().required("City is required"),
     state: Yup.string().required("State is required"),
