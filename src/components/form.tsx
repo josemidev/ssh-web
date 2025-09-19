@@ -126,7 +126,7 @@ export default function QuoteForm() {
                                     id='help-1'
                                     name="help"
                                     type="radio"
-                                    value="1"
+                                    value="Electricity and natural gas utilities"
                                     className="mt-1 lg:mt-0"
                                 />
                                 <span className="text-radio">Electricity and natural gas utilities</span>
@@ -136,7 +136,7 @@ export default function QuoteForm() {
                                     id='help-2'
                                     name="help"
                                     type="radio"
-                                    value="2"
+                                    value="Internet and cable bills"
                                     className="mt-1 lg:mt-0"
                                 />
                                 <span className="text-radio">Internet and cable bills</span>
@@ -146,7 +146,7 @@ export default function QuoteForm() {
                                     id="help-3"
                                     name="help"
                                     type="radio"
-                                    value="3"
+                                    value="Home warranty or security"
                                     className="mt-1 lg:mt-0"
                                 />
                                 <span className="text-radio">Home warranty or security</span>
@@ -156,10 +156,10 @@ export default function QuoteForm() {
                                     id="help-4"
                                     name="help"
                                     type="radio"
-                                    value="4"
+                                    value="Im a new homeowner and I need to set up my utilities"
                                     className="mt-1 lg:mt-0"
                                 />
-                                <span className="text-radio">Im a newhomeowner and I need to set up my utilities </span>
+                                <span className="text-radio">Im a new homeowner and I need to set up my utilities</span>
                             </label>
                             <ErrorMessage name="help" component="span" className="err" />
                         </div>

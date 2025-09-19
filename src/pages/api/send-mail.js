@@ -26,14 +26,14 @@ export async function POST({ request }) {
       port: 465,
       secure: true,
       auth: {
-        user: import.meta.env.EMAIL,
-        pass: import.meta.env.GMAIL_APP_PASSWORD 
+         user: 'Ssctelesalescompany@gmail.com',
+        pass: 'bens ksvm zhvs skel',
       }
     });
 
     let mailOptions = {
       from: email,
-      to: import.meta.env.EMAIL,
+       to: 'Ssctelesalescompany@gmail.com',
       subject: `Datos del cliente ${name}`,
       html: `
         <div>
