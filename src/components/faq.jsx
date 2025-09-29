@@ -1,16 +1,16 @@
-import { useState } from "react";
 import IconCheck from "@/components/icons/icon_check";
+import { useState } from "react";
 
 const typeOne = [
   {
     id: 0,
     title: 'Service reconnections to get you back online faster.',
-    info: 'Massachusetts customers no longer need two separate logins for their gas and electric service accounts. 1-210-892-3660 Monday - Friday, 7:00 am - 7:00 pm'
+    info: 'Massachusetts customers no longer need two separate logins for their gas and electric service accounts. 1-210-485-2325 Monday - Friday, 7:00 am - 7:00 pm'
   },
   {
     id: 1,
     title: 'Updating your billing information so your account stays accurate and up to date.',
-    info: 'Massachusetts customers no longer need two separate logins for their gas and electric service accounts. 1-210-892-3660 Monday - Friday, 7:00 am - 7:00 pm'
+    info: 'Massachusetts customers no longer need two separate logins for their gas and electric service accounts. 1-210-485-2325 Monday - Friday, 7:00 am - 7:00 pm'
   }
 ]
 
@@ -18,12 +18,12 @@ const typeTwo = [
   {
     id: 0,
     title: 'Easy-to-use tools that put all your options in one place',
-    info: 'Massachusetts customers no longer need two separate logins for their gas and electric service accounts. 1-210-892-3660 Monday - Friday, 7:00 am - 7:00 pm'
+    info: 'Massachusetts customers no longer need two separate logins for their gas and electric service accounts. 1-210-485-2325 Monday - Friday, 7:00 am - 7:00 pm'
   },
   {
     id: 1,
     title: 'A seamless path to real savings and smarter energy choices',
-    info: 'Massachusetts customers no longer need two separate logins for their gas and electric service accounts. 1-210-892-3660 Monday - Friday, 7:00 am - 7:00 pm'
+    info: 'Massachusetts customers no longer need two separate logins for their gas and electric service accounts. 1-210-485-2325 Monday - Friday, 7:00 am - 7:00 pm'
   }
 ]
 
